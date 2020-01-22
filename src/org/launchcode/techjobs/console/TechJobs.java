@@ -112,10 +112,10 @@ public class TechJobs {
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
 
         System.out.println("\n*****");
-        System.out.println(someJobs.keySet(1));
+        /*System.out.println(JobData.findAll()); */
 
-        for (int i = 0; i < someJobs.size(); i++) {
-            System.out.println(someJobs.get(i) + " (" + someJobs.get(i) + ")");
+        for (int i = 0; i < JobData.findAll().size(); i++) {
+            System.out.println(JobData.findAll(i).getKey + " (" + JobData.findAll(i).getValue + ")");
         }
 
         /*
